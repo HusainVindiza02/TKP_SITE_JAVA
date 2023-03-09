@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" xmlns:th="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Список дисциплин">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>список дисциплин</title>
+    <link rel="stylesheet" ref="../resources/css/nicepage.css" th:href="@{/resources/css/nicepage.css}" media="screen">
+<link rel="stylesheet" href="../resources/css/список-дисциплин.css" th:href="@{/resources/css/список-дисциплин.css}" media="screen">
+      <script class="u-script" type="text/javascript" th:src="@{/resources/js/jquery.js}" defer=""></script>
+      <script class="u-script" type="text/javascript" th:src="@{/resources/js/nicepage.js}" defer=""></script>
+    <meta name="generator" content="Nicepage 4.2.6, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="список дисциплин">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body"><header class="u-clearfix u-header u-header" id="sec-c068"><div class="u-container-style u-expanded-width u-group u-palette-5-dark-1 u-shape-rectangle u-group-1">
+        <div class="u-container-layout u-container-layout-1">
+          <h2 class="u-text u-text-default u-text-1">спорткомплекс<br>
+            <br>
+          </h2>
+          <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+            <div class="menu-collapse">
+              <a class="u-button-style u-custom-text-active-color u-custom-text-color u-custom-text-hover-color u-nav-link" href="#">
+                <svg viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;"><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</symbol>
+</defs></svg>
+              </a>
+            </div>
+            <div class="u-custom-menu u-nav-container" th:if="${!is_auth}">
+              <ul class="u-nav u-unstyled"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-white u-text-black u-text-hover-palette-5-light-3" th:href="@{/disciplines}">список дисциплин</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-white u-text-black u-text-hover-palette-5-light-3" th:href="@{/employees/all}">список работников</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-white u-text-black u-text-hover-palette-5-light-3" th:href="@{/login}">логин</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-white u-text-black u-text-hover-palette-5-light-3" th:href="@{/registration}">регистрация</a>
+</li></ul>
+            </div>
+              <div class="u-custom-menu u-nav-container" th:if="${is_auth}">
+                  <ul class="u-nav u-unstyled"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-white u-text-black u-text-hover-palette-5-light-3" th:href="@{/disciplines}">список дисциплин</a>
+                  </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-white u-text-black u-text-hover-palette-5-light-3" th:href="@{/employees/all}">список работников</a>
+                  </li><li class="u-nav-item"><label class="u-button-style u-nav-link u-text-active-white u-text-black u-text-hover-palette-5-light-3" th:text="${logged_user}"></label>
+                  </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-white u-text-black u-text-hover-palette-5-light-3" th:href="@{/logout}">выйти</a>
+                  </li></ul>
+              </div>
+            <div class="u-custom-menu u-nav-container-collapse">
+              <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+                <div class="u-inner-container-layout u-sidenav-overflow">
+                  <div class="u-menu-close"></div>
+                  <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="список-дисциплин.html">список дисциплин</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="список-работников.html">список работников</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">логин</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">регистрация</a>
+</li></ul>
+                </div>
+              </div>
+              <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+            </div>
+          </nav>
+        </div>
+      </div></header>
+    <section class="u-clearfix u-section-1" id="sec-6d9b">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-1">
+                <div class="u-container-layout u-container-layout-1" th:if="${is_admin}">
+                  <div class="u-form u-palette-5-dark-1 u-form-1">
+                    <form action="/disciplines/new" method="POST" class="" style="padding: 15px" source="custom">
+                      <div class="u-form-group u-form-name">
+                        <label for="name-558c" class="u-form-control-hidden u-label">Name</label>
+                        <input type="text" placeholder="Дисциплина" id="name-5558c" name="newDisciplineName" class="u-border-1 u-border-grey-30 u-input u-input-rectangle" required="">
+                      </div>
+                      <div class="u-form-group u-form-submit">
+                        <a href="#" class="u-border-none u-btn u-btn-submit u-button-style u-white u-btn-1">добавить новую дисциплину<br>
+                        </a>
+                        <input type="submit" value="submit" class="u-form-control-hidden">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="u-form u-palette-5-dark-1 u-form-2">
+                    <form action="/disciplines/position/new" method="POST" class="" style="padding: 15px" source="custom">
+                      <div class="u-form-group u-form-name">
+                        <label for="name-558c" class="u-form-control-hidden u-label">Name</label>
+                        <input type="text" placeholder="Должность" id="name-558c" name="newPositionName" class="u-border-1 u-border-grey-30 u-input u-input-rectangle" required="">
+                      </div>
+                      <div class="u-form-group u-form-submit">
+                        <a href="#" class="u-border-none u-btn u-btn-submit u-button-style u-white u-btn-2">добавить новую должность&nbsp;&nbsp;<br>
+                        </a>
+                        <input type="submit" value="submit" class="u-form-control-hidden">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+
+                <div class="u-container-layout u-container-layout-2">
+                    <div th:each="discipline : ${disciplines}">
+                  <div class="u-palette-5-dark-1 u-shape u-shape-rectangle u-shape-1">
+                      <label style="padding-top: 20px;" th:text="${discipline.getName()}" class="u-label"></label>
+                      <a th:href="${'/disciplines/delete/' + discipline.getId()}" class="button">удалить</a>
+                      <a th:href="${'/employees/discipline/' + discipline.getId()}" class="button">Показать работников</a>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h1 class="u-text u-text-default u-text-1">список дисциплин</h1>
+      </div>
+    </section>
+    
+    
+    
+    <section class="u-backlink u-clearfix u-grey-80">
+      <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
+        <span>Website Templates</span>
+      </a>
+      <p class="u-text">
+        <span>created with</span>
+      </p>
+      <a class="u-link" href="" target="_blank">
+        <span>Website Builder Software</span>
+      </a>. 
+    </section>
+  </body>
+</html>
